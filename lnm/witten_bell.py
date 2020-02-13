@@ -26,7 +26,7 @@ class witten_bell(ln_model):
         '''
         source: https://www.ee.columbia.edu/~stanchen/e6884/labs/lab3/x207.html
         '''
-        return 1/self._number_of_unigrams
+        return 1/self._number_of_unigrams + self._mle_unigram_probability[head]
 
     def __wb_bigram_probability(self, head, context):
         back_off_weight = self.__calc_back_off_weight(head, context, 2)

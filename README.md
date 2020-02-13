@@ -18,9 +18,7 @@ where `<value of n>` can be `1`, `2` or `3`, and `<smoothing type>` can be `k` f
 ### Preprocessing Pipeline
 > the following discussion is with respect to the given [`resources/corpus.txt`](resources/corpus.txt) file which is cleaned off of the names of the book and the poet.
 #### Sentence Segmentation and Tokenization
-`lnm/parser.py` uses nltk's sent_tokenize to tokenize sentences which then uses spacy's nlp() pipeline to tokenize the sentences. Sentence boundaries are marked by `start_symbol` and `end_symbol` out of which the ngram counts are calculated.
-
-### Comparison
+[`lnm/parser.py`](lnm/parser.py) uses nltk's sent_tokenize to tokenize sentences which then uses spacy's nlp() pipeline to tokenize the sentences. Sentence boundaries are marked by `start_symbol` and `end_symbol` out of which the ngram counts are calculated.
 
 ## Author(s)
 [Chaitanya Agarwal](htts://www.github.com/agarwalchaitanya)
